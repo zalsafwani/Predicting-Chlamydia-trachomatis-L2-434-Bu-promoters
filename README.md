@@ -15,9 +15,9 @@ Befor setting the database we need to download the genbank file from NCBI for th
    https://www.ncbi.nlm.nih.gov/books/NBK179288/ 
    then from Installation section click download EDirect installer
   
-  2. go to the terminal run : source ./install-edirect.sh
+  2. Run the code in the terminal: source ./install-edirect.sh
   
-  3.then run the following command to get the genbank file for chamydia_trachomatisL2_434_Bu from NCBI nucleotide database.
+  3. Run the following command to get the genbank file for chamydia_trachomatisL2_434_Bu from NCBI nucleotide database.
   esearch -db nucleotide -query "AM884176.1" | efetch -format gb > chamydia_trachomatisL2_434_Bu.gb
 
 ## Database Setup
@@ -25,7 +25,6 @@ Befor setting the database we need to download the genbank file from NCBI for th
 
 ## File Descriptions
 ### Data Aggregation/Preprocessing
-* **format_gene_ontology.py** - Converts the gene ontology in OBO format into a tab delimited format  
 
 
 ### Database Setup
