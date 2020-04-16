@@ -13,7 +13,7 @@ Befor setting the database we need to download the genbank file from NCBI for th
   1. Download Entrez Programming Utilities (E-utilities)
    Form https://www.ncbi.nlm.nih.gov/home/tools/ by clicking  Entrez Direct 
    https://www.ncbi.nlm.nih.gov/books/NBK179288/ 
-   then from Installation section click dow 
+   then from Installation section click download EDirect installer
   
   2. go to the terminal run : source ./install-edirect.sh
   
