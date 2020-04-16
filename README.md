@@ -15,7 +15,7 @@ The project goals:
 
 
 ### Database Setup
-* **projectcreat.sql ** - MYSQL code to set up the database 
+* **projectcreate.sql ** - MYSQL code to set up the database 
 
 ### Analysis
 
