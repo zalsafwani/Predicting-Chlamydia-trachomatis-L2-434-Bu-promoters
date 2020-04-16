@@ -30,11 +30,11 @@ Befor setting the database we need to download the genbank file from NCBI for th
 
 ## File Descriptions
 ### Data Aggregation/Preprocessing
-* **genbankParse.py** Used to parse the genbank file
+* **genbankParse.py **  - Used to parse the genbank file
 
 
 ### Database Setup
-* **projectcreate.sql ** - MYSQL code to set up the database 
+* **projectcreate.sql ** - MYSQL code to used to set up the tables in the database 
 
 ### Analysis
 
