@@ -5,7 +5,7 @@
  * especially if you have been collecting data 
  * regularly and don't have it backed up.
  */
-USE zalsafwani;
+--USE zalsafwani;
 DROP TABLE IF EXISTS chlamydia_trachomatis,
 		     promoters_prediction,
 		     protein_aliases,
