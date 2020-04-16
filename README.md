@@ -21,12 +21,12 @@ Befor setting the database we need to download the genbank file from NCBI for th
   esearch -db nucleotide -query "AM884176.1" | efetch -format gb > chamydia_trachomatisL2_434_Bu.gb
 
 ## Database Setup
-  After downloading the genbank file
-  run python3 genbankParse.py > genes.list
-  new file will be created called chlamydia_trachomatis
-  use this code to insert data into chlamydia_trachomatis table
-  mysqlimport (database_Name) chlamydia_trachomatis -L
-  Then we will be using the genes.list file as an input to create the insert data into coding_sequence table
+  * After downloading the genbank file
+  * Run python3 genbankParse.py > genes.list
+    new file will be created called chlamydia_trachomatis
+  * Use this code to insert data into chlamydia_trachomatis table
+    mysqlimport (database_Name) chlamydia_trachomatis -L
+  * Then we will be using the genes.list file as an input to create the insert data into coding_sequence table
 
 ## File Descriptions
 ### Data Aggregation/Preprocessing
