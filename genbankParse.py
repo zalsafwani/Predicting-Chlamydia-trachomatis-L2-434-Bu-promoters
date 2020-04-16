@@ -4,7 +4,7 @@ from Bio import GenBank
 # Open the genbank file to parse through it
 # then open a file in write mood to save the data neaded 
 # and then be able to insert them in chlamydia_trachomatis table
-with open("sequence.gb") as handle:
+with open("chamydia_trachomatisL2_434_Bu.gb") as handle:
     for record in GenBank.parse(handle):
         fileOut = open("chlamydia_trachomatis", "w")
         insert1 = record.locus + "\t" + record.size + "\t" 
