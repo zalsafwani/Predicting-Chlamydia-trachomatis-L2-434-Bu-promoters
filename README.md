@@ -6,6 +6,20 @@ The project goals:
   1. Find the promoters for Chlamydia trachomatis L2/434/Bu.
   2. Find the aliases for the genes in Chlamydia trachomatis L2/434/Bu.
   
+Befor setting the database we need to download the genbank file from NCBI for the Chlamydia trachomatis L2/434/Bu complete genome or use this file **Chlamydia trachomatis.gb** 
+  
+  Steps to download the genbank file from NCBI using the terminal:
+  
+  1. Download Entrez Programming Utilities (E-utilities)
+   Form https://www.ncbi.nlm.nih.gov/home/tools/ by clicking  Entrez Direct 
+   https://www.ncbi.nlm.nih.gov/books/NBK179288/ 
+   then from Installation section click dow 
+  
+  2. go to the terminal run : source ./install-edirect.sh
+  
+  3.then run the following command to get the genbank file for chamydia_trachomatisL2_434_Bu from NCBI nucleotide database.
+  esearch -db nucleotide -query "AM884176.1" | efetch -format gb > chamydia_trachomatisL2_434_Bu.gb
+
 ## Database Setup
 
 
