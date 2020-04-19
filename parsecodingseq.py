@@ -1,16 +1,30 @@
+# Import necessary libraries
 import re
 from Bio import SeqIO
 
 
 def main():
-
+    
+    # Open the fasta file to parse through it to save the complete sequence 
     for seqRecord in SeqIO.parse("sequence.fasta", "fasta"):
         clSeq = seqRecord.seq
-
+    
+    # Open the genes.list file to parse through
+    # to get the position for the coding sequence, locus_tag, and gene name
     fileIn = open("genes.list", "r")
+    
+    # Open a file to write the data needed for coding_sequence table
     fileOut = open("coding_sequence", "w")
+    
+    # Read the first line
     line = fileIn.readline()
 
+    # Read the genes.list file line by line
+    # to get the first 100 position for coding sequence, locus_tag, and gene name
+    # call the codingSeqCalc method to find the new position sequences
+    # write the data needed for coding_sequence table:
+    # locus_tag, gene name, strand, start and end position of the coding sequence,
+    # sequence that has the new position (add 100 bp upstream of the ATG start codon)
     while (line):
         line = line.strip()
         if line.startswith("gene"):
@@ -59,6 +73,11 @@ def main():
             line = fileIn.readline()
     fileOut.close()
     fileIn.close()
+    
+# This method will generate the new start and end position
+# that will help us add 100 bp upstream of the ATG start codon
+# that will help us find promoters when searching the promoterhunter tool
+# with the new sequence that has new position
 def codingSeqCalc(geneplace):
     strand = "complement"
     complement = False
