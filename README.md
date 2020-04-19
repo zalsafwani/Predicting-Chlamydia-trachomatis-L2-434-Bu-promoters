@@ -6,7 +6,9 @@ The project goals:
   1. Find the promoters for Chlamydia trachomatis L2/434/Bu.
   2. Find the aliases for the genes in Chlamydia trachomatis L2/434/Bu.
   
-Befor setting the database we need to download the genbank file and the fasta file from NCBI for the Chlamydia trachomatis L2/434/Bu complete genome or use those files **chamydia_trachomatisL2_434_Bu.gb** **sequence.fasta**
+Befor setting the database we need to download the genbank file and the fasta file from NCBI for the Chlamydia trachomatis L2/434/Bu complete genome or use those files 
+* **chamydia_trachomatisL2_434_Bu.gb** 
+* **sequence.fasta**
   
   Steps to download the genbank file from NCBI using the terminal:
   
