@@ -26,15 +26,21 @@ Befor setting the database we need to download the genbank file from NCBI for th
     new file will be created called chlamydia_trachomatis
   * Use this code to insert data into chlamydia_trachomatis table
     mysqlimport (database_Name) chlamydia_trachomatis -L
-  * Then we will be using the genes.list file as an input to create the insert data into coding_sequence table
+  * Then we will be parse the genes.list file and the fasta file 
+    python3 parsecodingseq.py
+    new file will be created called coding_sequence
+  * Use this code to insert data into coding_sequence table
+    mysqlimport (database_Name) coding_sequence -L
+    
 
 ## File Descriptions
 ### Data Aggregation/Preprocessing
 * **genbankParse.py **  - Used to parse the genbank file
+* **parsecodingseq.py ** - Used to parse the genes.list file (create from genbankParse.py file)
 
 
 ### Database Setup
-* **projectcreate.sql ** - MYSQL code to used to set up the tables in the database 
+* **projectcreate.sql ** - MYSQL code to used to set up the tables in the database (DDL)
 
 ### Analysis
 
