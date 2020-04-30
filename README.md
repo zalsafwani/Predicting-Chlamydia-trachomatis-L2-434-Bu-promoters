@@ -4,30 +4,23 @@ Final project for my BIOI 4870 (Database Search & Pattern Discovery) class.
 
 The project goals:
   1. Find the promoters for Chlamydia trachomatis L2/434/Bu.
-  2. Find the aliases for the genes in Chlamydia trachomatis L2/434/Bu.
+  2. Find protein informations for the valid gene names in Chlamydia trachomatis L2/434/Bu.
   
-Befor setting the database we need to download the genbank file and the fasta file from NCBI for the Chlamydia trachomatis L2/434/Bu complete genome or use those files 
-* **chamydia_trachomatisL2_434_Bu.gb** 
-* **sequence.fasta**
-  
-  Steps to download the genbank file from NCBI using the terminal:
-  
-  1. Download Entrez Programming Utilities (E-utilities)
-   Form https://www.ncbi.nlm.nih.gov/home/tools/ by clicking  Entrez Direct 
-   https://www.ncbi.nlm.nih.gov/books/NBK179288/ 
-   then from Installation section click download EDirect installer
-  
-  2. Run the code in the terminal: source ./install-edirect.sh
-  
-  3. Run the following command to get the genbank file for chamydia_trachomatisL2_434_Bu from NCBI nucleotide database.
-  esearch -db nucleotide -query "AM884176.1" | efetch -format gb > chamydia_trachomatisL2_434_Bu.gb
+## Language and installation
+  * Python3
+    * Biopython
+  * MySQL database
 
 ## Database Setup
   * Run the command to create the tables in the database
     * mysql -t < projectcreate.sql 
-  * After downloading the genbank file
-    * Run python3 genbankParse.py > genes.list
-    * new file will be created called chlamydia_trachomatis
+  * To download the genbank file and fasta file 
+    * Run python3 genbankParse.py 
+      * Four files will be created after runing the above command:
+      1. **chamydia_trachomatisL2_434_Bu.gb** 
+      2. **sequence.fasta**
+      3. **chlamydia_trachomatis**
+      4. **genes.list**
   * Use this code to insert data into chlamydia_trachomatis table
     * mysqlimport (database_Name) chlamydia_trachomatis -L
   * Then we will be parse the genes.list file and the sequence.fasta file 
@@ -45,7 +38,8 @@ Befor setting the database we need to download the genbank file and the fasta fi
 
 ### Database Setup
 * **projectcreate.sql ** - MYSQL code to used to set up the tables in the database (DDL)
-
+* **chlamydia_trachomatis ** chlamydia_trachomatis table data (DML)
+* **coding_sequence ** coding_sequence table data (DML)
 ### Analysis
 
 
