@@ -24,9 +24,9 @@ Befor setting the database we need to download the genbank file and the fasta fi
 
 ## Database Setup
   * Run the command to create the tables in the database
-    mysql -t < projectcreate.sql 
+    * mysql -t < projectcreate.sql 
   * After downloading the genbank file
-  * Run python3 genbankParse.py > genes.list
+    * Run python3 genbankParse.py > genes.list
     * new file will be created called chlamydia_trachomatis
   * Use this code to insert data into chlamydia_trachomatis table
     * mysqlimport (database_Name) chlamydia_trachomatis -L
