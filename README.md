@@ -23,6 +23,8 @@ Befor setting the database we need to download the genbank file and the fasta fi
   esearch -db nucleotide -query "AM884176.1" | efetch -format gb > chamydia_trachomatisL2_434_Bu.gb
 
 ## Database Setup
+  * Run the command to create the tables in the database
+    mysql -t < projectcreate.sql 
   * After downloading the genbank file
   * Run python3 genbankParse.py > genes.list
     * new file will be created called chlamydia_trachomatis
