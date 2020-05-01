@@ -65,10 +65,8 @@ def main():
                 geneInfo = geneInfo + '\t' + pos[1] + '\t' + str(sequence)
                 fileOut.write(geneInfo)
                 fileOut.write('\n')
-                if tag == "CTL0100":
+                if tag == "CTL0050":
                     break
-            elif line.startswith(" "):
-                line = fileIn.readline()
         else:
             line = fileIn.readline()
     fileOut.close()
@@ -89,7 +87,7 @@ def codingSeqCalc(geneplace):
     startPos = int(position[0])
     endPos = int(position[1])
     if (complement == True):
-        endPos = endPos + 100
+        startPos = startPos + 100
     else:
         startPos = startPos - 100
     return startPos , endPos
