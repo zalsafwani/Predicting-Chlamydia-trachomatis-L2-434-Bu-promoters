@@ -51,6 +51,7 @@ The project goals:
 * **projectcreate.sql ** - MYSQL code to used to set up the tables in the database (DDL)
 * **chlamydia_trachomatis ** chlamydia_trachomatis table data (DML)
 * **coding_sequence ** coding_sequence table data (DML)
+* **promoters_prediction ** promoters_prediction table data (DML)
 * **protein_info ** protein_info table data (DML)
 
 ### Analysis
