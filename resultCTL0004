@@ -1,0 +1,183 @@
+<table border="1">
+    <tr style="height:30px">
+        <th>Strand</th>
+        <th>Begin 1</th>
+        <th>Score 1</th>
+        <th>Begin 2</th>
+        <th>Score 2</th>
+        <th>Summary score</th>
+        <th>Energy score</th>
+        <th style="background-color:#E6EFFF">Final score</th>
+        <th>Sequence</th>
+    </tr>
+    <tr id="trb0" style="height:30px;" onmouseover="highlight(this.id)" onmouseout="xhighlight(this.id)">
+        <td>+</td>
+        <td>1236</td>
+        <td>3.38</td>
+        <td>1257</td>
+        <td>2.87</td>
+        <td>6.25</td>
+        <td>5.14</td>
+        <td style="background-color:#E6EFFF;">3.00 </td>
+        <td style="font-family:Courier">
+            AGATTCTCTC
+            <span style='background-color:lightskyblue'>TTTACA</span>
+            GAAGAGTTTTCTGGC
+            <span style='background-color:lightskyblue'>TTTAAT</span>
+            CCACTCATGT
+        </td>
+    </tr>
+    <tr id="trb1" style="height:30px;" onmouseover="highlight(this.id)" onmouseout="xhighlight(this.id)">
+        <td>+</td>
+        <td>1813</td>
+        <td>2.24</td>
+        <td>1835</td>
+        <td>3.49</td>
+        <td>5.73</td>
+        <td>5.21</td>
+        <td style="background-color:#E6EFFF;">2.93 </td>
+        <td style="font-family:Courier">
+            TTCAGATAGT
+            <span style='background-color:lightskyblue'>TTTACT</span>
+            CGTATGAAAAACAAAC
+            <span style='background-color:lightskyblue'>TACAAT</span>
+            CTCTGGTAGG
+        </td>
+    </tr>
+    <tr id="trb2" style="height:30px;" onmouseover="highlight(this.id)" onmouseout="xhighlight(this.id)">
+        <td>+</td>
+        <td>47</td>
+        <td>1.77</td>
+        <td>70</td>
+        <td>3.39</td>
+        <td>5.16</td>
+        <td>5.21</td>
+        <td style="background-color:#E6EFFF;">2.88 </td>
+        <td style="font-family:Courier">
+            TGATGTAATA
+            <span style='background-color:lightskyblue'>TTGCTC</span>
+            TTTTTTGTTATTCGGCG
+            <span style='background-color:lightskyblue'>TATATT</span>
+            TCCGGACTAA
+        </td>
+    </tr>
+    <tr id="trb3" style="height:30px;" onmouseover="highlight(this.id)" onmouseout="xhighlight(this.id)">
+        <td>+</td>
+        <td>2066</td>
+        <td>2.72</td>
+        <td>2089</td>
+        <td>2.95</td>
+        <td>5.67</td>
+        <td>5.37</td>
+        <td style="background-color:#E6EFFF;">2.88 </td>
+        <td style="font-family:Courier">
+            GTTCTTGAAA
+            <span style='background-color:lightskyblue'>GTGACC</span>
+            AAGGAGATAAGGTTTGC
+            <span style='background-color:lightskyblue'>TACACT</span>
+            ATATTGGGTC
+        </td>
+    </tr>
+    <tr id="trb4" style="height:30px;" onmouseover="highlight(this.id)" onmouseout="xhighlight(this.id)">
+        <td>+</td>
+        <td>1605</td>
+        <td>3.30</td>
+        <td>1629</td>
+        <td>1.30</td>
+        <td>4.60</td>
+        <td>5.18</td>
+        <td style="background-color:#E6EFFF;">2.85 </td>
+        <td style="font-family:Courier">
+            CATTTTTAGT
+            <span style='background-color:lightskyblue'>TGGACA</span>
+            ACGGTTTTTAGTTATTCG
+            <span style='background-color:lightskyblue'>TCAAAT</span>
+            CATAGATCAA
+        </td>
+    </tr>
+    <tr id="trb5" style="height:30px;" onmouseover="highlight(this.id)" onmouseout="xhighlight(this.id)">
+        <td>+</td>
+        <td>2060</td>
+        <td>3.66</td>
+        <td>2084</td>
+        <td>1.36</td>
+        <td>5.02</td>
+        <td>5.36</td>
+        <td style="background-color:#E6EFFF;">2.82 </td>
+        <td style="font-family:Courier">
+            AAGGTTGTTC
+            <span style='background-color:lightskyblue'>TTGAAA</span>
+            GTGACCAAGGAGATAAGG
+            <span style='background-color:lightskyblue'>TTTGCT</span>
+            ACACTATATT
+        </td>
+    </tr>
+    <tr id="trb6" style="height:30px;" onmouseover="highlight(this.id)" onmouseout="xhighlight(this.id)">
+        <td>+</td>
+        <td>2168</td>
+        <td>2.53</td>
+        <td>2190</td>
+        <td>2.13</td>
+        <td>4.66</td>
+        <td>5.37</td>
+        <td style="background-color:#E6EFFF;">2.79 </td>
+        <td style="font-family:Courier">
+            CAAGAAATGG
+            <span style='background-color:lightskyblue'>TTGGAA</span>
+            AAGCTGTTGGAGAAAC
+            <span style='background-color:lightskyblue'>TGTACT</span>
+            GTTTCAAGGC
+        </td>
+    </tr>
+    <tr id="trb7" style="height:30px;" onmouseover="highlight(this.id)" onmouseout="xhighlight(this.id)">
+        <td>+</td>
+        <td>1050</td>
+        <td>3.17</td>
+        <td>1073</td>
+        <td>1.04</td>
+        <td>4.21</td>
+        <td>5.33</td>
+        <td style="background-color:#E6EFFF;">2.77 </td>
+        <td style="font-family:Courier">
+            ATGAATCTAA
+            <span style='background-color:lightskyblue'>TCGACA</span>
+            ATCGGTCATCAAAGAGT
+            <span style='background-color:lightskyblue'>TAAAAG</span>
+            CTTTAGATTT
+        </td>
+    </tr>
+    <tr id="trb8" style="height:30px;" onmouseover="highlight(this.id)" onmouseout="xhighlight(this.id)">
+        <td>+</td>
+        <td>1354</td>
+        <td>2.52</td>
+        <td>1378</td>
+        <td>1.97</td>
+        <td>4.49</td>
+        <td>5.40</td>
+        <td style="background-color:#E6EFFF;">2.77 </td>
+        <td style="font-family:Courier">
+            CTTTAAGGTC
+            <span style='background-color:lightskyblue'>TTGAAT</span>
+            GCAGATAAAGAAGCTCGC
+            <span style='background-color:lightskyblue'>GAGAAT</span>
+            ATTTTAAAAA
+        </td>
+    </tr>
+    <tr id="trb9" style="height:30px;" onmouseover="highlight(this.id)" onmouseout="xhighlight(this.id)">
+        <td>+</td>
+        <td>338</td>
+        <td>2.67</td>
+        <td>361</td>
+        <td>1.05</td>
+        <td>3.72</td>
+        <td>5.21</td>
+        <td style="background-color:#E6EFFF;">2.76 </td>
+        <td style="font-family:Courier">
+            TCTCTGGTTT
+            <span style='background-color:lightskyblue'>TTGATG</span>
+            TCCAAACAACAAACAGT
+            <span style='background-color:lightskyblue'>AAGAAT</span>
+            CTGCTAGAAA
+        </td>
+    </tr>
+</table>
