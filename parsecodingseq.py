@@ -51,7 +51,7 @@ def main():
                 if geneplace.startswith("complement"):
                     strand = "complement"
                     geneplace = geneplace.strip("complement(").strip(')')
-                    sequence = clSeq[newPosition[0]:newPosition[1]].complement()
+                    sequence = clSeq[newPosition[0]:newPosition[1]].reverse_complement()
                 else:
                     if newPosition[0] == -99:
                         sequence = clSeq[1038741:1038843]+clSeq[0:1017]
@@ -87,7 +87,8 @@ def codingSeqCalc(geneplace):
     startPos = int(position[0])
     endPos = int(position[1])
     if (complement == True):
-        startPos = startPos + 100
+        startPos -= 1
+        endPos += 100
     else:
         startPos = startPos - 100
     return startPos , endPos
