@@ -30,16 +30,13 @@ CREATE TABLE coding_sequence(
     strand              VARCHAR(20)     NOT NULL,
     start_position      INT             NOT NULL,
     end_position        INT             NOT NULL,
-    sequence            VARCHAR(1000)   NOT NULL,
+    sequence_5to3       VARCHAR(3000)   NOT NULL,
     PRIMARY KEY (locus_tag)
     );
 
 CREATE TABLE promoters_prediction(
     locus_tag           VARCHAR(20)     NOT NULL,
-    strand              VARCHAR(20)     NOT NULL,
-    start_position      INT             NOT NULL,
-    end_position        INT             NOT NULL,
-    sequence            VARCHAR(25)     NOT NULL,
+    sequence            VARCHAR(50)     NOT NULL,
     FOREIGN KEY (locus_tag) REFERENCES coding_sequence (locus_tag) ON DELETE CASCADE, 
     PRIMARY KEY (locus_tag)
     );
@@ -53,3 +50,4 @@ CREATE TABLE protein_info(
     FOREIGN KEY (locus_tag) REFERENCES coding_sequence (locus_tag),
     PRIMARY KEY (accession_number)
     );
+ 
