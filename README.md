@@ -28,6 +28,11 @@ The project goals:
     * new file will be created called coding_sequence
   * Use this code to insert data into coding_sequence table
     * mysqlimport database_Name coding_sequence -L
+  * To get the filter result of phiSITE PromoterHunter tool with sequences from coding_sequence table
+    * Run python3 phiSITEFilterResults.py
+    * new file will be created called promoters_prediction
+  * Use this code to insert data into promoters_prediction table
+    * mysqlimport database_Name promoters_prediction -L
   * To get protein information from NCBI protein database 
     * Run python3 protein.py 
     * new file will be created called protein_info
@@ -49,9 +54,7 @@ The project goals:
 * **protein_info ** protein_info table data (DML)
 
 ### Analysis
-
-
-### User Interface
+* **phiSITEFilterResults.py ** Filter result of phiSITE PromoterHunter tool with sequences from coding_sequence table
 
 ## E.R. Diagram
 
