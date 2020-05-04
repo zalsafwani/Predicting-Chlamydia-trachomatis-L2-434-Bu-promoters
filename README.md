@@ -34,7 +34,7 @@ The project goals:
   * Use this code to insert data into promoters_prediction table
     * mysqlimport database_Name promoters_prediction -L
   * To get protein information from NCBI protein database 
-    * Run python3 protein.py 
+    * Run python3 geneInfo.py 
     * new file will be created called gene_info
   * Use this code to insert data into gene_info table
     * mysqlimport database_Name gene_info -L
