@@ -37,14 +37,14 @@ The project goals:
     * Run python3 protein.py 
     * new file will be created called gene_info
   * Use this code to insert data into gene_info table
-    * mysqlimport database_Name protein_info -L
+    * mysqlimport database_Name gene_info -L
     
 
 ## File Descriptions
 ### Data Aggregation/Preprocessing
 * **genbankParse.py **  - Used to retreive genbank file and sequence and parse genbank file
 * **parsecodingseq.py ** - Used to parse the genes.list file (create from genbankParse.py file)
-* **protein.py ** - Used to retreive protein information for valid gene names in Chlamydia trachomatis
+* **geneInfo.py ** - Used to retreive protein information for valid gene names in Chlamydia trachomatis
 * **phiSITEFilterResults.py ** Filter result of phiSITE PromoterHunter tool with sequences from coding_sequence table
 
 
@@ -53,7 +53,7 @@ The project goals:
 * **chlamydia_trachomatis ** chlamydia_trachomatis table data (DML)
 * **coding_sequence ** coding_sequence table data (DML)
 * **promoters_prediction ** promoters_prediction table data (DML)
-* **protein_info ** protein_info table data (DML)
+* **gene_info ** protein_info table data (DML)
 
 ### Analysis
 * **phiSITEFilterResults.py ** Filter result of phiSITE PromoterHunter tool with sequences from coding_sequence table
