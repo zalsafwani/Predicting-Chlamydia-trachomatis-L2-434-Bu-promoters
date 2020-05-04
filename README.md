@@ -3,8 +3,8 @@
 Final project for my BIOI 4870 (Database Search & Pattern Discovery) class.
 
 The project goals:
-  1. Find the promoters for Chlamydia trachomatis L2/434/Bu.
-  2. Find protein informations for the valid gene names in Chlamydia trachomatis L2/434/Bu.
+  1. Find promoters for Chlamydia trachomatis L2/434/Bu.
+  2. Find protein information’s for the first 24 protein with known gene names from the first 50 coding sequences (CDS) in Chlamydia trachomatis L2/434/Bu.
   
 ## Language and installation
   * Python3
@@ -44,7 +44,7 @@ The project goals:
 ### Data Aggregation/Preprocessing
 * **genbankParse.py **  - Used to retreive genbank file and sequence and parse genbank file
 * **parsecodingseq.py ** - Used to parse the genes.list file (create from genbankParse.py file)
-* **protein.py ** - Used to retreive protein information for valid gene names in Chlamydia trachomatis
+
 
 
 ### Database Setup
@@ -56,6 +56,7 @@ The project goals:
 
 ### Analysis
 * **phiSITEFilterResults.py ** Filter result of phiSITE PromoterHunter tool with sequences from coding_sequence table
+* **protein.py ** - Used to retreive protein information for known gene names in Chlamydia trachomatis
 
 ## E.R. Diagram
 
