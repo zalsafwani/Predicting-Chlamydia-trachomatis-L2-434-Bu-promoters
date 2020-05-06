@@ -7,13 +7,13 @@
 USE zalsafwani;
 DROP TABLE IF EXISTS chlamydia_trachomatis,
 		     promoters_prediction,
-		     protein_info,
+		     gene_info,
 		     coding_sequence;
 
 /* DDL statements are below for the 
  * chlamydia_trachomatis, coding_sequence,
  * promoters_prediction , 
- * protein_aliases tables.
+ * gene_info tables.
  */
 CREATE TABLE chlamydia_trachomatis(
     accession_number    VARCHAR(20)     NOT NULL,
@@ -41,7 +41,7 @@ CREATE TABLE promoters_prediction(
     PRIMARY KEY (locus_tag)
     );
 
-CREATE TABLE protein_info(
+CREATE TABLE gene_info(
     locus_tag		VARCHAR(20)	NOT NULL,
     accession_number	VARCHAR(20)	NOT NULL,
     gene_symbol		VARCHAR(20),
