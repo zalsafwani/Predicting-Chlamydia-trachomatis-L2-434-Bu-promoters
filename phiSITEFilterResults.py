@@ -1,8 +1,21 @@
+# Import necessary libraries
 import re
 
-fileName = ""
-counter = 1
+fileName = ""   # The name of the file result to be read
+counter = 1     # To modify the file name 
+
+# Open the file that will have the data needed
+# for promoters_prediction data table as write mode
 fileOut = open("promoters_prediction","w")
+
+# Go through the first 6 files that were manyally generated
+# using the online PromoterHunter tool
+# read line by line to find the accuret promoters result
+# by having the promoter in position less than 100
+# where we added the additional 100 bps upstrem the ATG
+# start codon for coding sequeces
+# save locus tag and the promoter sequence to the new file
+# where it will be used to insert data to the database
 while(fileName != "resultCTL0006"):
     fileName = "resultCTL000"
     fileName += str(counter)
@@ -38,9 +51,6 @@ while(fileName != "resultCTL0006"):
                 line = fileIn.readline()
         else:
             line = fileIn.readline()
-            
     counter += 1
-
     fileIn.close()
 fileOut.close()
-
