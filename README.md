@@ -34,6 +34,7 @@ The project goals:
   * Use this code to insert data into coding_sequence table
     * mysqlimport database_Name coding_sequence -L
   * To get the filter result of phiSITE PromoterHunter tool with sequences from coding_sequence table
+    * Download all of the file that starts with resultCTL and have them in your chlamydiaProject directory
     * Run python3 phiSITEFilterResults.py
     * new file will be created called promoters_prediction
   * Use this code to insert data into promoters_prediction table
