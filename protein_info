@@ -1,0 +1,24 @@
+CTL0001	CAP03445.1	hemB	338	delta-aminolevulinic acid dehydratase
+CTL0002	CAP03446.1	nqrA	465	Na(+)-translocating NADH-quinone reductase subunit A
+CTL0004	CAP03448.1	greA	715	Transcription elongation factor
+CTL0005	CAP03449.1	aspC	400	Aspartate aminotransferase
+CTL0007	CAP03451.1	recB	1026	exodeoxyribonuclease V beta chain
+CTL0008	CAP03452.1	recC	1006	exodeoxyribonuclease V gamma chain
+CTL0011	CAP03455.1	topA	857	DNA topoisomerase I
+CTL0018	CAP03462.1	recA	352	recombinase A
+CTL0020	CAP03464.1	recD	496	exodeoxyribonuclease V alpha chain
+CTL0024	CAP03468.1	kdsA	269	2-dehydro-3-deoxyphosphooctonate aldolase
+CTL0027	CAP03471.1	sfhB	335	ribosomal large subunit pseudouridine synthase D
+CTL0029	CAP03473.1	gyrA2	490	DNA gyrase subunit A
+CTL0030	CAP03474.1	gyrB	605	DNA gyrase subunit B
+CTL0031	CAP03475.1	hemA	335	glutamyl-tRNA reductase
+CTL0032	CAP03476.1	sycE	133	Type III secretion system chaperone
+CTL0038	CAP03482.1	sctN	442	ATP synthase (predicted TTSS protein)
+CTL0041	CAP03485.1	sctQ	373	Type III secretion component, basal body
+CTL0042	CAP03486.1	pkn5	490	putative serine/threonine-protein kinase (TTSS effector protein)
+CTL0044	CAP03488.1	aspC	356	aspartate kinase
+CTL0046	CAP03490.1	rrf	179	ribosome recycling factor
+CTL0047	CAP03491.1	pyrH	245	uridylate kinase
+CTL0048	CAP03492.1	tsf	282	translation elongation factor TS
+CTL0049	CAP03493.1	rpsB	282	SSU ribosomal protein S2
+CTL0050	CAP03494.1	ompA	394	major outer membrane protein
