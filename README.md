@@ -58,5 +58,5 @@ The project goals:
 * **phiSITEFilterResults.py ** Filter result of phiSITE PromoterHunter tool with sequences from coding_sequence table
 
 ## E.R. Diagram
-![Image description](https://github.com/zalsafwani/Predicting-Chlamydia-trachomatis-L2-434-Bu-promoters/blob/master/BIOI%204870%20Project%20ER%20Diagram-Page-1.png)
+![ER Diagram](https://github.com/zalsafwani/Predicting-Chlamydia-trachomatis-L2-434-Bu-promoters/blob/master/BIOI%204870%20Project%20ER%20Diagram-Page-1.png)
 
