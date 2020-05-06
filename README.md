@@ -1,4 +1,4 @@
-# Predicting promoters for Chlamydia trachomatis strain L2/434/Bu
+# Predicting promoters for Chlamydia trachomatis strain L2/434/Bu and gene information’s for the known gene names.
 
 Final project for my BIOI 4870 (Database Search & Pattern Discovery) class.
 
