@@ -8,7 +8,7 @@ cursor = conn.cursor()
 
 cursor.execute("select locus_tag, gene_symbol from coding_sequence where gene_symbol != '-';")
 row = cursor.fetchall()
-outFile = open("protein_info", "w")
+outFile = open("gene_info", "w")
 for data in row:
     locus = data[0] + "\t"
     symbol = data[1] + "\t"
@@ -32,4 +32,6 @@ for data in row:
         insert =  locus + version  + symbol + length + fullinfo + '\n'
         outFile.write(insert)
     handle2.close()
+cursor.close()
+conn.close()
 outFile.close()
