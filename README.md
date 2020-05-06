@@ -11,7 +11,7 @@ The project goals:
   * MySQL database
 
 ## Database Setup
-  * Login to you searver (Odin) that has Python3, Biopython, and MySQL database installed 
+  * Login to you server (Odin) that has Python3, Bio Python, and MySQL database installed 
   * Create a directory to save all the files
     * mkdir chlamydiaProject
     * cd chlamydiaProject
