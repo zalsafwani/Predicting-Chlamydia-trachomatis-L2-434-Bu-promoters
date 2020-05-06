@@ -3,14 +3,18 @@
 Final project for my BIOI 4870 (Database Search & Pattern Discovery) class.
 
 The project goals:
-  1. Find promoters for Chlamydia trachomatis L2/434/Bu.
-  2.	Find gene information’s for the known gene names from the first 50 coding sequences (CDS) in Chlamydia trachomatis L2/434/Bu.  
+  1. Find promoter sequences for Chlamydia trachomatis L2/434/Bu.
+  2. Find gene information’s for the known gene names from the first 50 coding sequences (CDS) in Chlamydia trachomatis L2/434/Bu.  
 ## Language and installation
   * Python3
     * Biopython
   * MySQL database
 
 ## Database Setup
+  * Login to you searver (Odin) that has Python3, Biopython, and MySQL database instull 
+  * Create a directory to save all the files
+    * mkdir chlamydiaProject
+    * cd chlamydiaProject
   * Run the command to create the tables in the database
     * mysql -t < projectcreate.sql 
   * To download the genbank file and fasta file from NCBI nucleotide database
@@ -37,25 +41,30 @@ The project goals:
     * new file will be created called gene_info
   * Use this code to insert data into gene_info table
     * mysqlimport database_Name gene_info -L
-    
+  * Use this code to access the analysis results
+    * mysql -t < analysis.sql
 
 ## File Descriptions
 ### Data Aggregation/Preprocessing
 * **genbankParse.py **  - Used to retreive genbank file and sequence and parse genbank file
 * **parsecodingseq.py ** - Used to parse the genes.list file (create from genbankParse.py file)
+* **phiSITEFilterResults.py ** - Used to sequences from coding_sequence table and filter phiSITE PromoterHunter results 
 * **geneInfo.py ** - Used to retreive gene information for known gene names in Chlamydia trachomatis
-* **phiSITEFilterResults.py ** Filter result of phiSITE PromoterHunter tool with sequences from coding_sequence table
 
 
 ### Database Setup
-* **projectcreate.sql ** - MYSQL code to used to set up the tables in the database (DDL)
+* **projectcreate.sql ** MYSQL code to used to set up the tables in the database (DDL)
 * **chlamydia_trachomatis ** chlamydia_trachomatis table data (DML)
 * **coding_sequence ** coding_sequence table data (DML)
 * **promoters_prediction ** promoters_prediction table data (DML)
 * **gene_info ** gene_info table data (DML)
 
 ### Analysis
-* **phiSITEFilterResults.py ** Filter result of phiSITE PromoterHunter tool with sequences from coding_sequence table
+* **phiSITEFilterResults.py ** Filter result of phiSITE PromoterHunter tool for sequences from coding_sequence table
+* **geneInfo.py ** Get gene informations for known gene names in Chlamydia trachomatis
+
+### Analysis Results
+* **analysis.sql ** To access and print the analysis results
 
 ## E.R. Diagram
 ![ER Diagram](https://github.com/zalsafwani/Predicting-Chlamydia-trachomatis-L2-434-Bu-promoters/blob/master/BIOI%204870%20Project%20ER%20Diagram-Page-1.png)
