@@ -41,4 +41,6 @@ while(fileName != "resultCTL0006"):
             
     counter += 1
 
+    fileIn.close()
+fileOut.close()
 
