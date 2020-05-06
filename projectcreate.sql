@@ -11,7 +11,8 @@ DROP TABLE IF EXISTS chlamydia_trachomatis,
 		     coding_sequence;
 
 /* DDL statements are below for the 
- * chlamydia_trachomatis, coding_sequence,
+ * chlamydia_trachomatis, 
+ * coding_sequence,
  * promoters_prediction , 
  * gene_info tables.
  */
