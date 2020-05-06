@@ -16,8 +16,10 @@ The project goals:
     * mkdir chlamydiaProject
     * cd chlamydiaProject
   * Run the command to create the tables in the database
-    * mysql -t < projectcreate.sql 
+    * vim projectcreate.sql and change line 8 to has your database name
+    * Then run mysql -t < projectcreate.sql 
   * To download the genbank file and fasta file from NCBI nucleotide database
+    * vim genbankParse.py and change line 9 to has your email address
     * Run python3 genbankParse.py 
       * Four files will be created after runing the above command:
       1. **chamydia_trachomatisL2_434_Bu.gb** 
@@ -37,13 +39,19 @@ The project goals:
   * Use this code to insert data into promoters_prediction table
     * mysqlimport database_Name promoters_prediction -L
   * To get protein information from NCBI protein database 
+    * vim geneInfo.py and change line 8 to has your email address and line 9 to has your database name
     * Run python3 geneInfo.py 
     * new file will be created called gene_info
   * Use this code to insert data into gene_info table
     * mysqlimport database_Name gene_info -L
   * Use this code to access the analysis results
+    * vim analysis.sql and change the second line with your database name
     * mysql -t < analysis.sql
 
+  * If you implement the database the first time using the above step and would like to implemented it again because you deleted records 
+    * vim runcommand.sh and change line 4, 6, 8, 10 with your database name
+    * Then you could run bash runcommand.sh 
+  
 ## File Descriptions
 ### Data Aggregation/Preprocessing
 * **genbankParse.py **  - Used to retreive genbank file and sequence and parse genbank file
