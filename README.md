@@ -15,6 +15,12 @@ The project goals:
   * Create a directory to save all the files
     * mkdir chlamydiaProject
     * cd chlamydiaProject
+    * Download the following files: 
+      * projectcreate.sql
+      * genbankParse.py
+      * parsecodingseq.py
+      * phiSITEFilterResults.py
+      * geneInfo.py
   * Run the command to create the tables in the database
     * vim projectcreate.sql and change line 8 to has your database name
     * Then run mysql -t < projectcreate.sql 
@@ -46,10 +52,12 @@ The project goals:
   * Use this code to insert data into gene_info table
     * mysqlimport database_Name gene_info -L
   * Use this code to access the analysis results
+    * Download the analysis.sql file
     * vim analysis.sql and change the second line with your database name
     * mysql -t < analysis.sql
 
   * If you implement the database the first time using the above step and would like to implemented it again because you deleted records 
+    * Download the runcommand.sh file
     * vim runcommand.sh and change line 4, 6, 8, 10 with your database name
     * Then you could run bash runcommand.sh 
   
